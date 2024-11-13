@@ -18,7 +18,7 @@ phases:
       - docker push 528757811031.dkr.ecr.us-east-1.amazonaws.com/python_app:latest
       - echo Writing Image Definitions file...
       - printf '[{"name":"Container-app-python","imageUri":"994617978174.dkr.ecr.us-east-2.amazonaws.com/python_app:latest"}]' > imagedefinitions.json
-      - printf '{"ImageURI":"994617978174.dkr.ecr.us-east-2.amazonaws.com/python_app:latest"}' > imageDetail.json
+      - printf '{"ImageURI":"528757811031.dkr.ecr.us-east-1.amazonaws.com/python_app:latest"}' > imageDetail.json
       - cat imagedefinitions.json 
 artifacts:
   files:
